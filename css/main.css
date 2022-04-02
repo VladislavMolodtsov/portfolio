@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+body {
+  min-height: 100vh;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+}
+.portfolio__main {
+  min-height: 100vh;
+  background: linear-gradient(153.28deg, rgba(255, 255, 255, 0.4) 1.19%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(42px);
+}
+.container {
+  width: 100%;
+  padding: 0px 200px;
+}
+/* NAVBAR */
+header {
+  padding-top: 35px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__bar ul{
+  padding: 0;
+  margin: 0;
+}
+.navigation__bar ul li {
+  margin: 0px 25px;
+}
+.navigation__bar ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #292423;
+  transition: all 0.3s;
+}
+.navigation__bar ul li a:hover {
+  opacity: 0.5;
+}
+button.hire__btn {
+  margin-left: 125px;
+  padding: 10px 32px;
+  background: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  border-style: hidden;
+  transition: all 0.3s;
+  box-shadow: -4px 8px 5px rgba(0, 0, 0, 0.2);
+}
+button.hire__btn:hover {
+  background: #292423;
+  color: #fff;
+  opacity: 1;
+}
+/* MAIN CONTENT */
+.main__content-wrapper {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col__left span {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #292423;
+  margin-bottom: 10px;
+}
+.col__left h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #292423;
+  line-height: 41px;
+  margin-bottom: 15px;
+}
+.col__left p {
+  width: 85%;
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 145%;
+  color: #292423;
+  margin-bottom: 20px;
+  letter-spacing: 0.01em;
+}
+a.btn__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 25px;
+  background: #292423;
+  width: 190px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-top: 35px;
+  box-shadow: -4px 8px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+a.btn__main:hover {
+  background: #fff;
+  color: #292423;
+}
+a.btn__main span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background: #35343d;
+  border-radius: 50px;
+  margin: 0px 0px 0px 12px;
+  transition: all 0.3s;
+  text-align: center;
+}
+a.btn__main span img {
+  margin: 0 0 7px 1px;
+}
+a.btn__main span:hover span{
+  background: #fff;
+  color: #292432;
+}
+/* EXPERIANCE */
+.experience__section {
+  width: 100%;
+  padding: 40px 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(42px);
+  border-radius: 10px;
+}
+.experience__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.experience__inner col h3 {
+  font-size: 25px;
+  color: #292423;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.experience__inner col p {
+  font-size: 25px;
+  color: #292423;
+  font-weight: 300;
+}
+@media (max-width: 768px) {
+  header {
+    padding-top: 15px;
+  }
+  .container {
+    padding: 0px 20px;
+  }
+  .main__content-wrapper {
+    margin-top: 50px;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .portfolio__main {
+    height: auto;
+  }
+  .col__left {
+    margin-top: 50px;
+  }
+  .col__left span {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .col__left h1 {
+    font-style: 30px;
+  }
+  .col__left p {
+    width: 100%;
+  }
+  a.btn__main span img {
+    margin: 0px 0 3px 1px;
+  }
+  .experience__section {
+    margin-top: 50px;
+    padding: 0;
+    background: transparent;
+  }
+  .experience__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .experience__inner .col {
+    width: 100%;
+    padding: 40px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(42px);
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    padding: 0px 60px;
+  }
+}
