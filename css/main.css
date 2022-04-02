@@ -217,3 +217,71 @@ a.btn__main span:hover span{
     padding: 0px 60px;
   }
 }
+/* TOGGLE BAR */
+.toggle__bar {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+.toggle__bar span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #292423;
+  border-radius: 10px;
+  margin-bottom: 4px;
+}
+@media (min-width: 1200px) {
+  .toggle__bar {
+    display: none;
+  }
+  .navigation__bar {
+    display: block;
+  }
+}
+@media (max-width: 1200px) {
+  .navigation__bar {
+    display: none;
+    position: absolute;
+    top: 4%;
+    left: 0;
+    right: 0;
+    width: 95%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(42px);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2;
+  }
+  .open {
+    display: block;
+  }
+  button.hire__btn {
+    display: none;
+  }
+  .navigation__bar ul {
+    padding: 10px 0px 20px;
+  }
+  .navigation__bar ul li {
+    padding: 10px 30px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  button.hire__btn {
+    margin-left: 0;
+  }
+  button.hire__btn a {
+    background: #292423;
+    color: #fff;
+  }
+}
+@media (min-width: 768px) {
+  .navigation__bar {
+    top: 85px;
+  }
+}
